@@ -18,7 +18,7 @@ app.use(bodyparser.urlencoded({extended:true}));
 //Firebase admin
 var admin = require("firebase-admin");
 
-var serviceAccount = require("node-firebase-push-firebase-adminsdk-u9n1s-601baf410f.json");
+var serviceAccount = require("node-firebase-push.json");
 
 admin.initializeApp({
   credential: admin.credential.cert(serviceAccount),
